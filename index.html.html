@@ -1060,8 +1060,8 @@ function renderPreviewOnly(){
       </table>
       <table class="doc-table premium-table">
         <tr><td>เบี้ยประกันภัยสุทธิ</td><td>${formatBaht(d.netPremium)}</td></tr>
-        <tr><td>ภาษีมูลค่าเพิ่ม 7%</td><td>${formatBaht(d.vatAmount)}</td></tr>
-        <tr><td>อากรแสตมป์ 0.4%</td><td>${formatBaht(d.dutyAmount)}</td></tr>
+        <tr><td>ภาษีมูลค่าเพิ่ม</td><td>${formatBaht(d.vatAmount)}</td></tr>
+        <tr><td>อากรแสตมป์</td><td>${formatBaht(d.dutyAmount)}</td></tr>
         <tr class="total-row"><td>เบี้ยรวมที่ต้องชำระ</td><td>${formatBaht(d.premium)}</td></tr>
       </table>
       <p class="doc-para"><strong>วันกำหนดชำระ:</strong> ${formatThaiDate(d.paymentDueDate)}</p>
