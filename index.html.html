@@ -259,7 +259,12 @@
       <div class="login-error" id="loginError">ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง</div>
       <form id="loginForm">
         <div class="field"><label for="loginUser">ชื่อผู้ใช้</label><input type="text" id="loginUser" autocomplete="username" placeholder="Admin" required></div>
-        <div class="field"><label for="loginPass">รหัสผ่าน</label><input type="password" id="loginPass" autocomplete="current-password" placeholder="••••••••" required></div>
+        <div class="field"><label for="loginPass">รหัสผ่าน</label>
+          <div class="password-wrap">
+            <input type="password" id="loginPass" autocomplete="current-password" placeholder="••••••••" required>
+            <button type="button" id="togglePassBtn" class="toggle-pass-btn" aria-label="แสดงรหัสผ่าน">👁</button>
+          </div>
+        </div>
         <button type="submit" class="btn btn-primary btn-block">เข้าสู่ระบบ</button>
       </form>
       <div class="login-hint">ระบบนี้ล็อกด้วยชื่อผู้ใช้/รหัสผ่านฝั่งหน้าเว็บเพื่อกันการเข้าถึงโดยบังเอิญ ไม่ใช่ระบบยืนยันตัวตนที่ปลอดภัยระดับองค์กร</div>
